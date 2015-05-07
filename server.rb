@@ -2,7 +2,7 @@ queue = %w[生 麦 生 米 生 卵]
 
 server = SimpleHttpServer.new(
   server_ip:     "0.0.0.0",
-  port:          ARGV[0],
+  port:          ARGV[0] || 3000,
   document_root: "./",
 )
 
